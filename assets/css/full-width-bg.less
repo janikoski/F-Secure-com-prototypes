@@ -1,0 +1,78 @@
+
+
+.fs-container{
+  width: 100%;
+}
+
+// Hide 
+.hidden{
+  display: none;
+}
+
+
+// Background cover and positioning options
+.background-cover{
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: top center;    
+}
+
+.background-align-left{
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position:top left;
+ }
+
+.background-align-right{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top right;
+}
+
+
+// Classes for the left and right split elements
+.split-right{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 50%;
+	background-size: cover;
+	background-position:top right;
+}
+
+.split-left{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	width: 50%;
+	background-size: cover;
+	background-position:top left;
+}
+
+// Set element position to relative
+.pos-relative{
+	position: relative;
+
+}
+
+
+// Scale down the hero are texts, and hide the split elements, for smaller screens.
+@media (max-width: 991px) {
+	.split-right, .split-left{
+		display: none;
+	}
+ }
+
+ @media (max-width: 767px) {
+	.split-right, .split-left{
+		display: none;
+	}
+ }
+
+ @media screen and (max-width: 480px) {
+	.split-right, .split-left{
+		display: none;
+	}
+ }

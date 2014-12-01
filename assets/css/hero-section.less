@@ -1,0 +1,72 @@
+
+
+// Hide 
+.hidden{
+  display: none;
+}
+
+
+
+// Sets the background of the hero area as fixed, and adds enough padding to the top to accomodate the sticky navigation.
+.hero-custom{
+	background-attachment:fixed !important;
+	padding-top: 116px;
+}
+
+
+// Background cover and positioning options
+.background-cover{
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position: top center;    
+}
+
+.background-align-left{
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-position:top left;
+ }
+
+.background-align-right{
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position:top right;
+}
+
+
+// Set element position to relative
+.pos-relative{
+	position: relative;
+
+}
+
+
+// Scale down the hero are texts, and hide the split elements, for smaller screens.
+@media (max-width: 991px) {
+	.hero-custom{
+ 		padding-top: 48px;
+ 		h1{
+			font-size: 72px;
+		  line-height: 48px;
+ 		}
+ 		h2{
+			font-size: 48px;
+			line-height: 32px;
+ 		} 		
+ 	}
+ }
+
+
+ @media screen and (max-width: 480px) {
+
+  .hero-custom{
+    h1{
+      font-size: 48px;
+      line-height: 32px;
+    }
+    h2{
+      font-size: 24px;
+      line-height: 24px;
+    }     
+  }
+ }

@@ -1,0 +1,144 @@
+/*
+* COMPARISON SECTION CLASSES
+*
+*/
+
+// Set the header image height to make the headers align consistently.
+.comparison-header-image{
+  height: 110px;
+  img{
+    max-height: 100%;
+  }
+}
+
+.fs-container{
+  width: 100%;
+}
+
+// Hide the sticky navi div.
+#comparison-sticky-navi{
+// display: none;
+}
+
+
+// Attaches the sticky header container below the site navigation.
+.fixed{
+  position: fixed;
+  top: 116px;
+  left: 0px;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  background-color: #fff;
+  z-index: 100;
+}
+
+
+// Class for the <div> which contains the header elements of a comparison section.
+.comparison-header-row{
+  margin:0;
+  h4{   
+    font-size: 24px;
+    line-height: 18px;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+}
+
+// Comparison section header link class. 
+.comparison-header-link{ 
+  padding-top: 1em;
+  padding-bottom: 1em;
+  text-transform: uppercase;
+  a{
+    outline: 0;
+    display: block;
+    text-decoration: none;
+    font-size: 36px;
+    font-family: FSecureSansHeadline;
+    width: 100%;
+  }
+  .icon{
+    font-size: 24px;
+    margin-right: .5em;
+  }
+}
+
+// Comparison chart row.
+.comparison-row{
+  padding-top: .5em;
+  padding-bottom: .5em;
+  margin:0;
+
+  .icon{
+    display: block;
+    padding-top:.5em;
+    font-size: 24px;
+  }
+  p{
+   padding-bottom: 0;
+  }
+  .btn{
+    font-size: 16px;
+  }
+}
+
+// Container for the comparison chart. Sets the background-color of every second row to light gray.
+.comparison-content-container{
+  padding-bottom: 2em;
+  .comparison-row:nth-child(2n+2) {  
+    background-color: #ededed;
+  }
+}
+
+
+// Hide 
+.hidden{
+  display: none;
+}
+
+
+// Set element position to relative
+.pos-relative{
+	position: relative;
+
+}
+
+
+// Scale down the hero are texts, and hide the split elements, for smaller screens.
+@media (max-width: 991px) {
+  #comparison-sticky-navi{
+    top:48px;
+  }
+ }
+
+ @media (max-width: 767px) {
+  .comparison-header-row{
+    margin:0;
+    h4{   
+      font-size: 18px;
+      line-height: 12px;
+    }
+  }
+  .comparison-row{
+    a{
+      min-width: 50px;
+    }
+    .btn{
+      padding:12px;
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+  }
+ }
+
+ @media screen and (max-width: 480px) {
+  .comparison-header-row{
+    margin:0;
+    h4{   
+      font-size: 14px;
+      line-height: 10px;
+    }
+  }
+ }

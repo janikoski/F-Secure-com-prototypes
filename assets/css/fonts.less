@@ -1,0 +1,113 @@
+@font-face {
+  font-family: FSecureSans;
+  src: url(FSecureSansWeb-Regular.woff) format("woff"),
+       url(FSecureSansWeb-Regular.ttf) format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FSecureSans;
+  src: url(FSecureSansWeb-Light.woff) format("woff"),
+       url(FSecureSansWeb-Light.ttf) format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FSecureSans;
+  src: url(FSecureSansWeb-Bold.woff) format("woff"),
+       url(FSecureSansWeb-Bold.ttf) format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: FSecureSansHeadline;
+  src: url(FSecureSansWeb-Headline.woff) format("woff"),
+       url(FSecureSansWeb-Headline.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  -webkit-font-feature-settings: "liga" 1, "kern" 1; 
+  -moz-font-feature-settings: "liga" 1, "kern" 1; 
+  -ms-font-feature-settings: "liga" 1, "kern" 1; 
+  font-feature-settings: "liga" 1, "kern" 1; 
+}
+
+// Reset text styles to match the brand guidelines.
+h1, h2, h3, h4{
+	font-family: FSecureSansHeadline, Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+p, ul, li, a{
+	font-family: FSecureSans, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+
+.regular * {
+  font-family: FSecureSans;
+  font-weight: 400;
+}
+
+.bold * {
+  font-family: FSecureSans;
+  font-weight: 700;
+}
+
+.light * {
+  font-family: FSecureSans;
+  font-weight: 200;
+}
+
+.headline * {
+  font-family: FSecureSansHeadline;
+  font-weight: normal;
+}
+
+
+section{
+  
+	h1{
+		font-size: 29;
+	}
+	
+	p, ul, li{
+		font-size: 18px;
+		line-height: 24px;
+	}
+	a{
+    font-size: 18px;
+    line-height: 24px;
+		padding: 0;
+    text-decoration: none;
+	}
+	.btn{
+    font-size: 24px;
+		padding:12px 24px 12px 24px;
+	}
+	hr{
+		color: #999999;
+		background-color: #999999;
+		height: 1px;
+		border:0;
+	}
+  .lead{
+    font-family: FSecureSans;
+    font-weight: 700;
+    font-size: 24px;
+  }
+
+  // Text for the pricing section's price text elements
+  .price-text{
+    font-family: FSecureSansHeadline;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 24px;
+    text-transform: uppercase;
+  }
+}
+
